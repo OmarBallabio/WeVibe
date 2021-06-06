@@ -1,0 +1,291 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  background: #FFF;
+  overflow-x: hidden;
+  color: #3D0505;
+}
+
+.lt-ie9 select, .browser-ie10 select {
+	background: none;
+	background-color: #ffffff;
+
+}
+
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 400px;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-catalog  {
+	background-color: #5a2c82;
+	border: none;
+	border-radius: 0;
+	color: white;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.1;
+	margin: 0;
+	min-width: auto;
+	padding: 7px;
+	text-transform: uppercase;
+
+}
+
+.btn-catalog:focus, .btn-catalog:hover, input[type=submit].btn-catalog:focus, input[type=submit].btn-catalog:hover {
+	background-color: #391949;
+	color: white;
+
+}
+
+@media all and (min-width:600px ) {
+	.btn-catalog {
+		font-size: 1em;
+		line-height: 1.2;
+
+	}
+}
+
+.btn-catalog.outlined {
+	border: 1px  solid #5a2c82;
+	background-color: transparent;
+	color: #5a2c82;
+	padding: 6px;
+
+}
+
+
+span.wevibe.registered::after {
+
+    content: "®";
+    display: inline;
+    top: -0.5em;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+
+}
+
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: underline;}
+
+
+a.lnkmore {
+	color: #7F7F7F;
+	font-size: 12px;
+	display: inline-block;
+	text-decoration: none;
+	margin: 10px;
+	padding: 6px  14px;
+}
+
+a.btn-catalog {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+
+}
+
+.catalog-card {
+	text-align: center;
+		background-color: #f8f8f8;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	min-height: 400px;
+	padding: 10px;
+	margin: 15px;
+	position: relative;
+
+
+
+}
+
+.catalog-card .card-inner .card-images {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	overflow: hidden;
+}
+
+.catalog-card .card-inner .card-images .card-image {
+	overflow: hidden;
+
+}
+
+.catalog-card .card-inner .card-info a:hover h3 {
+	color: #512d6d;
+
+}
+
+.catalog-card .product-colors {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+
+}
+
+@media all and (min-width:768px ) {
+	.catalog-card .product-colors {
+		right: 24px;
+		top: 15px;
+
+	}
+}
+
+.catalog-card .product-colors .product-color {
+	border-radius: 50%;
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+
+}
+
+.catalog-card .card-image img {
+	vertical-align: bottom;
+	margin-bottom: 15px;
+
+}
+
+.catalog-card .card-title {
+	color: black;
+	font-size: 14.5px;
+	line-height: 1.2;
+	margin-top: auto;
+  margin-bottom: 5px;
+
+}
+
+.catalog-card .card-subtitle {
+	color: #808080;
+	font-size: 13px;
+	line-height: 1.2;
+
+}
+
+.catalog-card .card-description {
+	color: #50565a;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-top: 5px;
+
+}
+
+.catalog-card .card-actions {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+}
+
+.catalog-card .card-buy {
+		margin: 20px;
+
+}
+
+.catalog-card .card-link a {
+	color: #57585b;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin-top: 10px;
+	text-transform: uppercase;
+
+}
+
+.catalog-card .card-link a:after {
+
+	content: "";
+	display: inline-block;
+	height: 7px;
+	margin-left: 5px;
+	width: 5px;
+
+}
+
+.category_title  {
+	background-color: #5a2c82;
+	color: white;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.1;
+	margin: 0;
+  margin-right: 0px;
+	min-width: auto;
+	padding: 7px;
+  text-align: right;
+
+}
+.category-banner .category-banner-image {
+	display: none;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.equal-heights {
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: 5px;
+
+}

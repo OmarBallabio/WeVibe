@@ -1,0 +1,75 @@
+
+html {
+    font-family: 'roboto_slabbold', serif;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5em;
+}
+
+.Ptitle {
+    background-color: #5A2C82;
+    color: white;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+    margin-right: 0px;
+    margin-right: 0px;
+    min-width: auto;
+    padding: 7px;
+    text-align: right;
+  }
+
+.Pbanner{
+  width:100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.PbannerText{
+  font-weight: bold;
+  width:100%;
+  color:#FFF;
+  margin-top:50px;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 2);
+  text-align: center;
+}
+.Peyes{
+  margin-top: 10px;
+  color: #607d8b;
+  text-align: center;
+  align-content: center;
+  font-size: 1em;
+  line-height: 1.1em;
+
+}
+.Pvideo{
+  background-color: black;
+  margin-top: 10px;
+  align-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.Pinfo{
+  display: block;
+  color: #064a76;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #064a76;
+  padding-bottom: 10px;
+
+}
+
+.Ph2{
+
+}
+.Ph3{
+
+}
+.Ph4{
+
+}

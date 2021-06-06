@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+label .menu {
+  position: fixed;
+  left: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 180px;
+  height: 180px;
+  background: #5A2C82;
+  border-radius: 50% 50% 50% 50%;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #5A2C82, 0 0 0 0 #5A2C82;
+  cursor: pointer;
+}
+label .hamburger {
+  position: absolute;
+  top: 130px;
+  left: 112px;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transition: .5s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+label .hamburger:before {
+  top: -10px;
+}
+label .hamburger:after {
+  bottom: -10px;
+}
+label input {
+  display: none;
+}
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #5A2C82, 0 0 0 100vh #5A2C82;
+  border-radius: 0;
+}
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+
+label input:unchecked + .menu + ul {
+  	opacity: 0;
+   z-index: 300;
+}
+label input:checked + .menu + ul {
+  	opacity: 1;
+   z-index: 200;
+}
+label ul {
+	margin-top: 100px;
+	justify-content: center;
+  align-self: center;
+  list-style-type:none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  position: relative;
+  padding-left: 10px;
+  display: block;
+  color: #5A2C82;
+  text-decoration: none;
+  z-index: inherit;
+  font-size: 0.9em;
+}
+
+ .menuli {
+  font-size:1.2em;
+ 	justify-content: center;
+ 	border-radius: 20% 3%;
+	padding: 8px;
+  margin-top: 5px;
+	background: #ffffff;
+}
